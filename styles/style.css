@@ -192,7 +192,7 @@ nav .middle-side-nav a {
   justify-content: center;
 }
 #card-wrapper .card .card-image img {
-  max-width: 225px;
+  max-width: 220px;
   height: auto;
   object-fit: cover;
 }
