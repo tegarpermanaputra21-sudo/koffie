@@ -114,17 +114,21 @@ nav .middle-side-nav a {
 }
 
 #card-wrapper {
-  display: flex;
-  height: 364px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 360px;
 }
 #card-wrapper .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-right: 1px solid var(--primary-color);
-  width: 360px;
-  height: 364px;
+  height: 360px;
   text-align: center;
 }
 #card-wrapper .card .card-image img {
-  width: 280px;
+  width: 250px;
 }
 #card-wrapper .card .card-info h3 {
   font-size: 16px;
