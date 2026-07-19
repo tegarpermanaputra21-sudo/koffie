@@ -11,7 +11,6 @@ html,
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--background-color);
-  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -53,7 +52,7 @@ nav .middle-side-nav a {
 }
 #hero .left-side-hero p {
   font-size: 14px;
-  max-width: 60%;
+  width: 60%;
   line-height: 1.5;
 }
 #hero .left-side-hero .btn {
@@ -71,7 +70,6 @@ nav .middle-side-nav a {
   display: flex;
   align-items: flex-end;
   height: auto;
-  max-width: 542px;
   margin-top: auto;
 }
 #hero .left-side-hero .bottom-desc h1 {
@@ -86,4 +84,31 @@ nav .middle-side-nav a {
   object-fit: cover;
   object-position: center;
   height: 552px;
+}
+
+#marquee {
+  width: 100%;
+  background-color: var(--background-color);
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+}
+#marquee .marquee-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+#marquee .marquee-content span {
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+#marquee .marquee-content .separator {
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+  background-color: var(--primary-color);
 }
