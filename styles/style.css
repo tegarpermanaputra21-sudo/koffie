@@ -62,7 +62,7 @@ nav .middle-side-nav a {
 }
 #hero .left-side-hero .btn a {
   font-size: 13px;
-  padding: 15px;
+  padding: 12px;
   border-radius: 50%;
   border: 1px solid var(--primary-color);
 }
@@ -111,4 +111,21 @@ nav .middle-side-nav a {
   width: 35px;
   height: 1px;
   background-color: var(--primary-color);
+}
+
+#card-wrapper {
+  display: flex;
+  height: 364px;
+}
+#card-wrapper .card {
+  border-right: 1px solid var(--primary-color);
+  width: 360px;
+  height: 364px;
+  text-align: center;
+}
+#card-wrapper .card .card-image img {
+  width: 280px;
+}
+#card-wrapper .card .card-info h3 {
+  font-size: 16px;
 }
