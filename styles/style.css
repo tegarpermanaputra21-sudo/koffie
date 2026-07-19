@@ -11,15 +11,13 @@ html,
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--background-color);
+  color: var(--primary-color);
 }
 a {
   text-decoration: none;
   color: var(--primary-color);
 }
-.semi-bold {
-  font-weight: 500;
-  text-transform: uppercase;
-}
+
 nav {
   height: 80px;
   display: flex;
@@ -38,14 +36,18 @@ nav .middle-side-nav a {
   font-size: 30px;
 }
 
-#hero {
+/* --- Layout Sections --- */
+#hero,
+#content-cta {
   display: flex;
   height: 552px;
 }
+
 #hero .left-side-hero {
   width: 50%;
   padding: 40px;
   border-right: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,12 +62,6 @@ nav .middle-side-nav a {
   justify-content: flex-end;
   margin-top: 20px;
 }
-#hero .left-side-hero .btn a {
-  font-size: 13px;
-  padding: 12px;
-  border-radius: 50%;
-  border: 1px solid var(--primary-color);
-}
 #hero .left-side-hero .bottom-desc {
   display: flex;
   align-items: flex-end;
@@ -75,21 +71,70 @@ nav .middle-side-nav a {
 #hero .left-side-hero .bottom-desc h1 {
   font-size: 42px;
   line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
 }
+
+#content-cta .left-side-content-cta {
+  width: 50%;
+  border-right: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+#content-cta .right-side-content-cta {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#content-cta .right-side-content-cta .top-desc,
+#content-cta .right-side-content-cta .bottom-desc {
+  height: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid var(--primary-color);
+}
+#content-cta .right-side-content-cta h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#content-cta .right-side-content-cta p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
 #hero .right-side-hero {
   width: 50%;
+  border-bottom: 1px solid var(--primary-color);
 }
-#hero .right-side-hero img {
+#hero .right-side-hero img,
+#content-cta .left-side-content-cta img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
-  height: 552px;
+}
+.btn a {
+  font-size: 13px;
+  padding: 12px 24px;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  display: inline-block;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+.btn a:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
 }
 
 #marquee {
   width: 100%;
   background-color: var(--background-color);
-  border-top: 1px solid var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
   padding: 15px 20px;
   display: flex;
@@ -103,6 +148,8 @@ nav .middle-side-nav a {
   gap: 20px;
 }
 #marquee .marquee-content span {
+  font-size: 15px;
+  font-weight: 500;
   letter-spacing: 0.5px;
   white-space: nowrap;
 }
@@ -115,21 +162,50 @@ nav .middle-side-nav a {
 
 #card-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 360px;
+  grid-template-columns: repeat(4, 1fr);
+  height: 380px;
+  border-bottom: 1px solid var(--primary-color);
 }
 #card-wrapper .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-right: 1px solid var(--primary-color);
-  height: 360px;
+  padding: 30px 20px;
   text-align: center;
+  transition: all 0.3s ease;
+}
+#card-wrapper .card:last-child {
+  border-right: none;
+}
+#card-wrapper .card:hover {
+  background-color: #f3f2eb;
+}
+#card-wrapper .card img:hover {
+  transform: scale(1.2);
+}
+#card-wrapper .card .card-image {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #card-wrapper .card .card-image img {
-  width: 250px;
+  max-width: 225px;
+  height: auto;
+  object-fit: cover;
+}
+#card-wrapper .card .card-info {
+  margin-top: 15px;
 }
 #card-wrapper .card .card-info h3 {
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+#card-wrapper .card .card-info p {
+  font-size: 14px;
+  color: #666;
 }
