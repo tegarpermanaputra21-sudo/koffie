@@ -6,8 +6,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html,
+body {
   font-family: "Inter", sans-serif;
   background-color: var(--background-color);
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 nav {
@@ -18,10 +26,6 @@ nav {
   padding: 20px 40px;
   border: 1px solid var(--primary-color);
 }
-nav a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
 nav .left-side-nav,
 nav .right-side-nav {
   display: flex;
@@ -30,4 +34,55 @@ nav .right-side-nav {
 nav .middle-side-nav a {
   font-family: "Rubik Spray Paint", sans-serif;
   font-size: 30px;
+}
+
+#hero {
+  display: flex;
+  height: 552px;
+}
+#hero .left-side-hero {
+  width: 50%;
+  padding: 40px;
+  border-right: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#hero .left-side-hero p {
+  font-size: 14px;
+  max-width: 60%;
+  line-height: 1.5;
+}
+#hero .left-side-hero .btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+#hero .left-side-hero .btn a {
+  font-size: 13px;
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+}
+#hero .left-side-hero .bottom-desc {
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+  max-width: 542px;
+  margin-top: auto;
+}
+#hero .left-side-hero .bottom-desc h1 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+#hero .right-side-hero {
+  width: 50%;
+}
+#hero .right-side-hero img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 552px;
 }
