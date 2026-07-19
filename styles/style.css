@@ -9,3 +9,25 @@
   font-family: "Inter", sans-serif;
   background-color: var(--background-color);
 }
+
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border: 1px solid var(--primary-color);
+}
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+nav .left-side-nav,
+nav .right-side-nav {
+  display: flex;
+  gap: 40px;
+}
+nav .middle-side-nav a {
+  font-family: "Rubik Spray Paint", sans-serif;
+  font-size: 30px;
+}
