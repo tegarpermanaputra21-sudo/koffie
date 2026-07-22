@@ -364,6 +364,10 @@ footer .bottom-footer .copyright p {
     font-size: 32px;
   }
 
+  #marquee {
+    overflow: hidden;
+  }
+
   footer .top-footer {
     display: flex;
     flex-wrap: wrap;
