@@ -368,6 +368,16 @@ footer .bottom-footer .copyright p {
     overflow: hidden;
   }
 
+  #card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  #card-wrapper .card {
+    border-right: none;
+    border-bottom: 1px solid var(--primary-color);
+  }
+
   footer .top-footer {
     display: flex;
     flex-wrap: wrap;
