@@ -363,4 +363,9 @@ footer .bottom-footer .copyright p {
   #content-cta .right-side-content-cta h2 {
     font-size: 32px;
   }
+
+  footer .top-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
