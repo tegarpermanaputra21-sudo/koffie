@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kōffie.</title>
+    <title>Kōffie.</title>
+
     <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="shortcut icon"
-      href="assets/img/favicon.jpeg"
+      href="assets/images/favicon.jpeg"
       type="image/x-icon"
     />
+
     <link
       href="https://fonts.googleapis.com/css?family=Rubik+Spray+Paint:regular"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
       rel="stylesheet"
     />
     <link
@@ -26,28 +28,37 @@
   <body>
     <header>
       <nav>
-        <div class="left-side-nav">
-          <a href="#">Shop</a>
-          <a href="#">About</a>
-          <a href="#">Blog</a>
+        <div class="left-nav">
+          <a href="#" class="logo">Kōffie.</a>
+          <div class="nav-links">
+            <a href="#">Shop</a>
+            <a href="#">About us</a>
+            <a href="#">Blog</a>
+            <a href="#">Favorites</a>
+            <a href="#">Cart</a>
+          </div>
         </div>
-        <div class="middle-side-nav">
-          <a href="#">Kōffie.</a>
-        </div>
-        <div class="right-side-nav">
-          <a href="#">Favorites</a>
-          <a href="#">Cart</a>
-          <a href="#">Account</a>
+        <div class="right-nav">
+          <a href="#" aria-label="Account"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+          <a href="#" aria-label="Search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a href="#" aria-label="Shopping Bag"
+            ><i class="fa-solid fa-bag-shopping"></i
+          ></a>
         </div>
       </nav>
     </header>
+
     <main>
       <section id="hero">
         <div class="left-side-hero">
           <div class="top-desc-with-btn">
             <p>
               Discover our handcrafted blends, designed to elevate your coffee
-              experience, Embrace the artistry, embrace the fiavor, and embark
+              experience. Embrace the artistry, embrace the flavor, and embark
               on a journey through the finest brews.
             </p>
             <div class="btn">
@@ -63,7 +74,7 @@
           </div>
         </div>
         <div class="right-side-hero">
-          <img src="assets/img/photo-product1.png" alt="" />
+          <img src="assets/images/photo-product1.png" alt="Hero Coffee Space" />
         </div>
       </section>
 
@@ -82,138 +93,252 @@
         </div>
       </section>
 
-      <section id="card-wrapper">
-        <a href="#" class="card">
-          <div class="card-image">
-            <img src="assets/img/can1.png" alt="Product Name" />
+      <section class="products-section">
+        <h2 class="section-title">COFFEE CAN</h2>
+        <div class="card-wrapper">
+          <a href="#" class="card">
+            <div class="card-image">
+              <img src="assets/images/can1.png" alt="Espresso Vogue" />
+            </div>
+            <div class="card-info">
+              <h3>ESPRESSO VOGUE</h3>
+              <p>$2.00</p>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-image">
+              <img src="assets/images/can2.png" alt="Hit Cappuccino" />
+            </div>
+            <div class="card-info">
+              <h3>HIT CAPPUCCINO</h3>
+              <p>$1.60</p>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-image">
+              <img src="assets/images/can3.png" alt="Slick Flat White" />
+            </div>
+            <div class="card-info">
+              <h3>SLICK FLAT WHITE</h3>
+              <p>$1.80</p>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-image">
+              <img src="assets/images/can4.png" alt="Modish Macchiato" />
+            </div>
+            <div class="card-info">
+              <h3>MODISH MACCHIATO</h3>
+              <p>$2.00</p>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-image">
+              <img src="assets/images/can5.png" alt="Matcha Latte" />
+            </div>
+            <div class="card-info">
+              <h3>MATCHA LATTE</h3>
+              <p>$2.00</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="products-section">
+        <h2 class="section-title">COFFEE POUCH</h2>
+        <div class="card-wrapper">
+          <a href="#" class="card">
+            <div class="card-image package">
+              <img src="assets/images/package1.png" alt="Espresso Pouch" />
+            </div>
+            <div class="card-info">
+              <h3>ESPRESSO</h3>
+              <p>$20.00</p>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-image package">
+              <img src="assets/images/package2.png" alt="Stylish Mocha Pouch" />
+            </div>
+            <div class="card-info">
+              <h3>STYLISH MOCHA</h3>
+              <p>$16.00</p>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-image package">
+              <img
+                src="assets/images/package3.png"
+                alt="Silk Flat White Pouch"
+              />
+            </div>
+            <div class="card-info">
+              <h3>SILK FLAT WHITE</h3>
+              <p>$18.00</p>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-image package">
+              <img
+                src="assets/images/package4.png"
+                alt="Modish Macchiato Pouch"
+              />
+            </div>
+            <div class="card-info">
+              <h3>MODISH MACCHIATO</h3>
+              <p>$20.00</p>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-image package">
+              <img src="assets/images/package5.png" alt="Matcha Latte Pouch" />
+            </div>
+            <div class="card-info">
+              <h3>MATCHA LATTE</h3>
+              <p>$20.00</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="recent-reviews">
+        <h2>RECENT REVIEWS</h2>
+        <div class="reviews-wrapper">
+          <div class="review">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="desc-comment">
+              <p>
+                "The ready-to-drink cans taste surprisingly fresh. Premium
+                quality with beautiful packaging."
+              </p>
+            </div>
+            <div class="username">
+              <p>- Daniel Brooks</p>
+            </div>
           </div>
-          <div class="card-info">
-            <h3>ESPRESSO VOGUE</h3>
-            <p>$2.00</p>
+          <div class="review">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="desc-comment">
+              <p>
+                "Amazing flavors and fast shipping! I love starting my morning
+                with their Slick Flat White."
+              </p>
+            </div>
+            <div class="username">
+              <p>- Sarah Jenkins</p>
+            </div>
           </div>
-        </a>
-        <a href="#" class="card">
-          <div class="card-image">
-            <img src="assets/img/can2.png" alt="Product Name" />
+          <div class="review">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="desc-comment">
+              <p>
+                "The coffee pouches keep the beans so fresh. Best specialty
+                coffee brand around!"
+              </p>
+            </div>
+            <div class="username">
+              <p>- Marcus Vance</p>
+            </div>
           </div>
-          <div class="card-info">
-            <h3>HIT CAPPUCCINO</h3>
-            <p>$1.60</p>
-          </div>
-        </a>
-        <a href="#" class="card">
-          <div class="card-image">
-            <img src="assets/img/can3.png" alt="Product Name" />
-          </div>
-          <div class="card-info">
-            <h3>SLICK FLAT WHITE</h3>
-            <p>$1.80</p>
-          </div>
-        </a>
-        <a href="#" class="card">
-          <div class="card-image">
-            <img src="assets/img/can4.png" alt="Product Name" />
-          </div>
-          <div class="card-info">
-            <h3>MODISH MACCIATO</h3>
-            <p>$2.00</p>
-          </div>
-        </a>
+        </div>
+      </section>
+
+      <section id="explore-section">
+        <h2 class="section-title">EXPLORE</h2>
+        <div class="explore-wrapper">
+          <a href="#" class="explore-item">
+            <img
+              src="assets/images/explore-photo1.jpeg"
+              alt="Explore Product 1"
+            />
+          </a>
+          <a href="#" class="explore-item">
+            <img
+              src="assets/images/explore-photo2.jpeg"
+              alt="Explore Product 2"
+            />
+          </a>
+          <a href="#" class="explore-item">
+            <img
+              src="assets/images/explore-photo3.jpeg"
+              alt="Explore Product 3"
+            />
+          </a>
+          <a href="#" class="explore-item">
+            <img
+              src="assets/images/explore-photo4.jpeg"
+              alt="Explore Product 4"
+            />
+          </a>
+        </div>
       </section>
 
       <section id="content-cta">
-        <div class="left-side-content-cta">
-          <img src="assets/img/photo-product2.png" alt="" />
-        </div>
-        <div class="right-side-content-cta">
-          <div class="top-desc">
-            <h2>COFFEE CAN</h2>
-            <p>
-              Latte Coffee<br />
-              Expresso Coffee
-            </p>
-            <div class="btn">
-              <a href="#">All Products</a>
-            </div>
-          </div>
-          <div class="bottom-desc">
-            <h2>COFFEE POUCH</h2>
-            <p>
-              Flat White Coffee<br />
-              Macciato Coffee
-            </p>
-            <div class="btn">
-              <a href="#">All Products</a>
-            </div>
-          </div>
+        <h2>EXPERIENCE MORE THAN COFFEE</h2>
+        <p>
+          Subscribe for curated coffee insights, seasonal collections, and
+          member-only offers.
+        </p>
+        <div class="btn">
+          <a href="#">Discover More</a>
         </div>
       </section>
 
-      <section id="card-wrapper">
-        <a href="#" class="card">
-          <div class="card-image">
-            <img src="assets/img/package1.png" alt="Product Name" />
-          </div>
-          <div class="card-info">
-            <h3>ESPRESSO POUCH</h3>
-            <p>$20.00</p>
-          </div>
-        </a>
-        <a href="#" class="card">
-          <div class="card-image">
-            <img src="assets/img/package2.png" alt="Product Name" />
-          </div>
-          <div class="card-info">
-            <h3>STYLISH MOCKA POUCH</h3>
-            <p>$16.00</p>
-          </div>
-        </a>
-        <a href="#" class="card">
-          <div class="card-image">
-            <img src="assets/img/package3.png" alt="Product Name" />
-          </div>
-          <div class="card-info">
-            <h3>SILK FLAT WHITE POUCH</h3>
-            <p>$18.00</p>
-          </div>
-        </a>
-        <a href="#" class="card">
-          <div class="card-image">
-            <img src="assets/img/package4.png" alt="Product Name" />
-          </div>
-          <div class="card-info">
-            <h3>MODISH MACCIATO POUCH</h3>
-            <p>$20.00</p>
-          </div>
-        </a>
-      </section>
+      <section id="map-section">
+        <iframe
+          class="map-iframe"
+          src="https://maps.google.com/maps?q=539+E.+Main+Street,+Bozeman,+MT+59715&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
 
-      <section id="hero">
-        <div class="left-side-hero">
-          <div class="top-desc-with-btn">
-            <p>
-              Place your coffee order today and anticipate its arrival tomorrow,
-              ensuring you can savor the rich flavors wiithout delay.
-            </p>
-            <div class="btn">
-              <a href="#">Order</a>
-            </div>
+        <div class="map-info-card">
+          <h2>BOZEMAN</h2>
+          <address class="store-address">
+            539 E. Main Street<br />
+            Bozeman, MT 59715<br />
+            (406) 587-4761
+          </address>
+          <div class="store-hours">
+            <p>Mon - Sat, 10am - 6pm</p>
+            <p>Sunday, 12pm - 5pm</p>
           </div>
-          <div class="bottom-desc">
-            <h1>
-              PURCHASE TODAY, <br />
-              RECEIVE TOMORROW
-            </h1>
-          </div>
-        </div>
-        <div class="right-side-hero">
-          <img src="assets/img/photo-product3.png" alt="" />
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=539+E.+Main+Street,+Bozeman,+MT+59715"
+            target="_blank"
+            class="btn-directions"
+          >
+            GET DIRECTIONS
+          </a>
         </div>
       </section>
     </main>
+
     <footer>
       <div class="top-footer">
-        <div class="footer-col left-side-top-footer">
+        <div class="footer-col">
           <h3>MENU</h3>
           <div class="nav-footer">
             <a href="#">SHOP</a>
@@ -221,8 +346,7 @@
             <a href="#">COLLAB</a>
           </div>
         </div>
-
-        <div class="footer-col middle-side-top-footer">
+        <div class="footer-col">
           <h3>INFO</h3>
           <div class="nav-footer">
             <a href="#">ABOUT US</a>
@@ -230,13 +354,20 @@
             <a href="#">CONTACT</a>
           </div>
         </div>
-
+        <div class="footer-col">
+          <h3>SUPPORT</h3>
+          <div class="nav-footer">
+            <a href="#">FAQ</a>
+            <a href="#">TERMS OF SERVICE</a>
+            <a href="#">ORDER TRACKING</a>
+          </div>
+        </div>
         <div class="footer-col right-side-top-footer">
           <h3>GET PROMOTION FROM US</h3>
-          <div class="input-user">
-            <input type="email" placeholder="Your Email" />
+          <form class="input-user">
+            <input type="email" placeholder="Your Email" required />
             <button type="submit" class="btn-signup">Sign up</button>
-          </div>
+          </form>
         </div>
       </div>
 
